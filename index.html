@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY-15-TASK</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header><h1>DOM Manipulation with Forms</h1> <p id="description">Problem statement :<br> Create a form and table using HTML, CSS, and DOM. <br>
+        The form should contain the following fields:
+        <ul>
+            <li>First name</li>
+            <li>Last name</li>
+            <li>Email</li>
+            <li>Address</li>
+            <li>Pincode</li>
+            <li>Gender</li>
+            <li>Choice of food (must choose at least 2 out of 5 options)</li>
+            <li>State</li>
+            <li>Country</li>
+          </ul>
+          <br> On submission of the form, the values must be appended to the table. </p>
+    </header>
+   
+    <div class="container">
+      <div class="form-group">
+          <div class="container-form">
+            <form id="form">
+              <h1 id="title">Enter your Details:</h1>
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name">
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="last-name" name="lname" required placeholder="Enter your last name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="pcode">Pincode</label>
+                <input type="text" id="pincode" name="pcode" required placeholder="Enter your pincode">
+              </div>
+              <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" required placeholder="Enter your state">
+              </div>
+              <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" required placeholder="Enter your country">
+              </div>
+              <div class="form-gender">
+                <label for="gender">Gender</label>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+              </div>
+    
+              <div class="form-choice">
+                <label for="food">Choice of Food</label>
+                <input type="checkbox" id="food1" name="food" value="Pizza" />
+                <label for="food1">Pizza</label>
+                <input type="checkbox" id="food2" name="food" value="Burger" />
+                <label for="food2">Burger</label>
+                <input type="checkbox" id="food3" name="food" value="Pasta" />
+                <label for="food3">Pasta</label>
+                <input type="checkbox" id="food4" name="food" value="Briyani" />
+                <label for="food4">Briyani</label>
+                <input type="checkbox" id="food5" name="food" value="Sandwich" />
+                <label for="food5">Sandwich</label>
+              </div>
+             
+              <div class="form-btn">
+                <input type="submit" id="submit" class="btn btn-primary" value="Submit">
+                <input type="reset" id="reset" value="Reset">
+              </div>
+
+            </form>
+          </div>
+         
+          
+        
+          
+        </form>
+      </div>
+
+      <div class="container-table">
+        <h2>You can see your details here</h2>
+        <table class="table" id="table-data">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Address</th>
+              <th>Pincode</th>
+              <th>state</th>
+              <th>Country</th>
+              <th>Gender</th>
+              <th>Food</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+   <script src=" https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
